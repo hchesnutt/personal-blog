@@ -1,0 +1,15 @@
+.layout {
+  margin-top: 50px;
+
+  .navigation {
+    position: absolute;
+    right: 50%;
+    margin-right: 350px;
+  }
+
+  .content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

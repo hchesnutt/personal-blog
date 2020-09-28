@@ -1,0 +1,12 @@
+.container {
+    .header {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .navItem {
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

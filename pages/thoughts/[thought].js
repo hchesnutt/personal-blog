@@ -3,13 +3,13 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import LeftNavLayout from "../../components/LeftNavLayout";
 
-import styles from "../../styles/[book].module.scss";
+import styles from "../../styles/[thought].module.scss";
 
-export default function Book({ MarkdownX }) {
+export default function Thought({ MarkdownX }) {
   const router = useRouter();
   return (
     <LeftNavLayout>
-      <Link href="/books">
+      <Link href="/thoughts">
         <div className={styles.backArrow}>{"< Back"}</div>
       </Link>
       <MarkdownX />
@@ -17,9 +17,12 @@ export default function Book({ MarkdownX }) {
   );
 }
 
-Book.getInitialProps = async function (context) {
-  const { book: slug } = context.query;
-  const MarkdownX = dynamic(() => import(`../../markdown/books/${slug}.mdx`));
+Thought.getInitialProps = async function (context) {
+  const { thought: slug } = context.query;
+  const MarkdownX = dynamic(() =>
+    import(`../../markdown/thoughts/${slug}.mdx`)
+  );
+
   return {
     MarkdownX,
   };

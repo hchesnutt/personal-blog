@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "the-sun-also-rises",
+    "title": "The Sun Also Rises",
+    "author": "Joe Rogan",
+    "createdAt": "2020-01-01",
+    "stars": 2
+  },
+  {
+    "slug": "jane-eyre",
+    "title": "Jane Eyre",
+    "author": "Charlotte Bronte",
+    "createdAt": "2021-04-01",
+    "stars": 5
+  }
+]

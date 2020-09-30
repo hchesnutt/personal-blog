@@ -13,7 +13,7 @@ export default function Navigation() {
   const pages = ["thoughts", "books", "about"];
 
   const renderName = (name) =>
-    `${toTitleCase(name)} ${RegExp(`^/${name}`).test(pathname) ? "⬅️" : ""}`;
+    `${toTitleCase(name)} ${RegExp(`^/${name}`).test(pathname) ? "⬅" : ""}`;
 
   return (
     <div className={styles.container}>

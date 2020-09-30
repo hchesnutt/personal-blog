@@ -1,17 +1,16 @@
-import Layout from "../../components/Layout";
+import LeftNavLayout from "../../components/LeftNavLayout";
 import styles from "../../styles/books.module.scss";
 import BookLink from "../../components/BookLink";
 
 export default function Books({ books }) {
-  console.log(books);
   return (
-    <Layout>
+    <LeftNavLayout>
       <div className={styles.container}>
         {books.map((book) => (
           <BookLink book={book} />
         ))}
       </div>
-    </Layout>
+    </LeftNavLayout>
   );
 }
 

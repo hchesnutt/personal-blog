@@ -1,9 +1,29 @@
 .container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 5px;
 
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  .leftContent {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+    .title {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .rightContent {
+    display: flex;
+    align-content: center;
+
+    .stars {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 5px;
+    }
   }
 }
